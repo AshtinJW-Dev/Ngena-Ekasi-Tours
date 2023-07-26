@@ -239,9 +239,16 @@ header .navbar a:hover{
     object-fit: cover;
 }
 
-.packages .box-container .box .cape-container{
-    height: 60rem;
+.packages .box-container .box .vid-container{
+    height: 25rem;
     width: 100%;
+    object-fit: cover;
+}
+
+.packages .box-container .box .cape-container{
+    height: 40rem;
+    width: 80%;
+    padding-left: 20rem;
     
 }
 
@@ -302,25 +309,18 @@ header .navbar a:hover{
 }
 
 .packages .content{
-    height: 52rem;
-    position: relative;
+    height: 100%;
+    
     align-items: center;
     justify-content: center;
 }
 
-.packages .btn{
-    position: absolute;
-    bottom: 2rem;
-    left: 12rem;
+.btn{
     box-shadow: 5px 10px #888888;
 }
 
-.packages .btn.experience{
-    position: absolute;
-    bottom: 3rem;
-    left: 55rem;
-    box-shadow: 5px 10px #888888;
-}
+
+
 
 /*services*/
 
