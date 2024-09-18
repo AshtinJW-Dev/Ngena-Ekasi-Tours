@@ -34,7 +34,6 @@ Check out the live demo of the project deployed on Netlify:
 ## Installation and Setup
 To run this project locally:
 1. Clone the repository:
-   ```bash
    git clone https://github.com/AshtinJW-Dev/Ngena-Ekasi-Tours.git
 Navigate to the project directory:
 cd ngena-ekasi-tours
@@ -45,4 +44,4 @@ License
 This project is licensed under the MIT License.
 
 Author
-Developed by AshtinJW-Dev. You can reach out for questions or collaborations via GitHub. 
+Developed by Ashtin JW. You can reach out for questions or collaborations via GitHub. 
