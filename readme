@@ -1,0 +1,48 @@
+# Ngena Ekasi Tours Website
+
+This is the official website for **Ngena Ekasi Tours**, showcasing various tour packages, a booking form, and multimedia galleries. The site provides an overview of township tours, educational school outings, and more, primarily centered around the Cape Town area.
+
+## Live Demo
+Check out the live demo of the project deployed on Netlify:  
+[Live Demo on Netlify](https://ngena-ekasi-tours.netlify.app/)
+
+## Features
+- **Responsive Design**: The site is optimized for devices of all screen sizes, from mobile phones to large desktop screens.
+- **Tour Packages**: Display of various tour packages with images, descriptions, and pricing.
+- **Booking Form**: Visitors can book directly from the website using a booking form that sends information to the email.
+- **Multimedia Integration**: The website contains galleries, embedded videos, and social media widgets for a richer experience.
+- **Swiper.js Integration**: Swiper is used for carousels, allowing easy navigation through content.
+- **Interactive Navigation**: Smooth scrolling and menu bar toggle for mobile devices.
+
+## Tech Stack
+- **HTML5**: For semantic structuring of the content.
+- **CSS3**: Custom stylesheets for layout and design.
+- **JavaScript**: For interactivity and dynamic content.
+- **Swiper.js**: For creating a carousel-style image gallery.
+- **Google Fonts**: 'Nunito' font is imported to enhance typography.
+- **Font Awesome**: Icons to add visual cues.
+- **FormSubmit**: A simple form submission handler.
+
+## Pages and Sections
+1. **Home**: Introduction to Ngena Ekasi Tours with a video slider and a CTA button.
+2. **About Us**: Overview of the company and its offerings, including key features and skills.
+3. **Packages**: A detailed view of various tour packages with descriptions, pricing, and booking options.
+4. **Gallery**: Image gallery showcasing different tour highlights.
+5. **Book**: A form that allows users to book tours.
+6. **Contact Us**: Contact form to get in touch for queries and additional information.
+
+## Installation and Setup
+To run this project locally:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AshtinJW-Dev/Ngena-Ekasi-Tours.git
+Navigate to the project directory:
+cd ngena-ekasi-tours
+
+Open index.html in your browser to view the website.
+
+License
+This project is licensed under the MIT License.
+
+Author
+Developed by AshtinJW-Dev. You can reach out for questions or collaborations via GitHub. 
