@@ -2,6 +2,11 @@
 
 :root {
   --red: #e63946;
+  --white: #fff;
+  --black: #333;
+  --gray: #666;
+  --light-gray: #f7f7f7;
+  --transition: all 0.2s linear;
 }
 
 * {
@@ -12,16 +17,16 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: all 0.2s linear;
+  transition: var(--transition);
 }
 
-h1, h3, .btn, nav, footer a{
+h1, h3, .btn, nav, footer a {
   text-transform: capitalize;
 }
 
 *::selection {
   background: var(--red);
-  color: #fff;
+  color: var(--white);
 }
 
 html {
@@ -56,11 +61,12 @@ section {
   display: inline-block;
   margin-top: 1rem;
   background: var(--red);
-  color: #fff;
+  color: var(--white);
   padding: 0.8rem 3rem;
   border: 0.2rem solid var(--red);
   cursor: pointer;
   font-size: 1.7rem;
+  box-shadow: 5px 10px #888888;
 }
 
 .btn:hover {
@@ -73,7 +79,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: #333;
+  background: var(--black);
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -89,7 +95,7 @@ img {
 header .logo {
   font-size: 2.5rem;
   font-weight: bolder;
-  color: #fff;
+  color: var(--white);
   text-transform: uppercase;
 }
 
@@ -100,7 +106,7 @@ header .logo img {
 }
 
 header .navbar a {
-  color: #fff;
+  color: var(--white);
   font-size: 2rem;
   margin: 0 0.8rem;
 }
@@ -110,8 +116,8 @@ header .navbar a:hover {
 }
 
 #menu-bar {
-  color: #fff;
-  border: 0.1rem solid #fff;
+  color: var(--white);
+  border: 0.1rem solid var(--white);
   border-radius: 0.5rem;
   font-size: 3rem;
   padding: 0.5rem 1.2rem;
@@ -135,14 +141,14 @@ header .navbar a:hover {
 
 .home .content h3 {
   font-size: 4.5rem;
-  color: #fff;
+  color: var(--white);
   text-transform: uppercase;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .home .content p {
   font-size: 2.5rem;
-  color: #fff;
+  color: var(--white);
   padding: 0.5rem 0;
 }
 
@@ -169,7 +175,7 @@ header .navbar a:hover {
   width: 2rem;
   display: inline-block;
   border-radius: 50%;
-  background: #fff;
+  background: var(--white);
   cursor: pointer;
   margin: 0 0.5rem;
 }
@@ -178,31 +184,26 @@ header .navbar a:hover {
   background: var(--red);
 }
 
-
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
 
-
-/* other about */
-.about ul{
+.about ul {
   list-style: none;
 }
-
 
 .about .about-section {
   background: url(../images/zozo-school.jpg) no-repeat left;
   background-size: 40%;
-  background-color: #fdfdfd;
+  background-color: var(--light-gray);
   overflow: hidden;
 }
 
 .about .inner-container {
   width: 55%;
   float: right;
-  background-color: #fdfdfd;
+  background-color: var(--light-gray);
   padding: 50px;
-  
 }
 
 .about .inner-container h3 {
@@ -220,8 +221,8 @@ header .navbar a:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.about .text i{
-  padding-right: .5rem;
+.about .text i {
+  padding-right: 0.5rem;
 }
 
 .about .skills {
@@ -255,7 +256,6 @@ header .navbar a:hover {
     padding: 60px;
   }
 }
-
 
 /*booking*/
 
@@ -291,14 +291,14 @@ header .navbar a:hover {
   padding: 1rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   font-size: 1.7rem;
-  color: #333;
+  color: var(--black);
   text-transform: none;
 }
 
 .book .row form .inputBox h3 {
   font-size: 2rem;
   padding: 1rem 0;
-  color: #666;
+  color: var(--gray);
 }
 
 .book .row form h3.right {
@@ -326,8 +326,8 @@ header .navbar a:hover {
   object-fit: cover;
 }
 
-.packages .port-img{
-  object-fit:fill;
+.packages .port-img {
+  object-fit: fill;
   height: 45rem;
 }
 
@@ -355,7 +355,7 @@ header .navbar a:hover {
 
 .packages .box-container .box .content h3 {
   font-size: 2rem;
-  color: #333;
+  color: var(--black);
 }
 
 .packages .box-container .box .content i {
@@ -370,7 +370,7 @@ header .navbar a:hover {
 
 .packages .box-container .box .content p {
   font-size: 1.7rem;
-  color: #666;
+  color: var(--gray);
   padding: 1rem 0;
   text-align: center;
 }
@@ -378,9 +378,6 @@ header .navbar a:hover {
 .packages .box-container .box .content .stars {
   text-align: center;
 }
-
-
-
 
 .packages .box-container .box .content .btn {
   display: flex;
@@ -392,12 +389,7 @@ header .navbar a:hover {
   align-items: center;
 }
 
-.btn {
-  box-shadow: 5px 10px #888888;
-}
-
-.explore-warn{
-  
+.explore-warn {
   font-weight: bold;
   color: red;
 }
@@ -425,12 +417,12 @@ header .navbar a:hover {
 
 .services .box-container .box h3 {
   font-size: 2.5rem;
-  color: #333;
+  color: var(--black);
 }
 
 .services .box-container .box p {
   font-size: 1.5rem;
-  color: #666;
+  color: var(--gray);
   padding: 1rem 0;
 }
 
@@ -453,6 +445,7 @@ header .navbar a:hover {
   width: 60%;
   height: 60%;
 }
+
 .column {
   float: left;
   width: 25%;
@@ -464,6 +457,7 @@ header .navbar a:hover {
   display: table;
   clear: both;
 }
+
 /*gallery*/
 .gallery .box-container {
   display: flex;
@@ -474,7 +468,7 @@ header .navbar a:hover {
 .gallery .box-container .box {
   overflow: hidden;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-  border: 1rem solid #fff;
+  border: 1rem solid var(--white);
   border-radius: 0.5rem;
   flex: 1 1 30rem;
   height: 25rem;
@@ -486,8 +480,6 @@ header .navbar a:hover {
   width: 100%;
   object-fit: cover;
 }
-
-
 
 .gallery .box-container .box:hover {
   transform: scale(1.1);
@@ -503,57 +495,50 @@ header .navbar a:hover {
   color: #eee;
 }
 
-.gallery .swiper-button{
-  color: #e63946 !important;
+.gallery .swiper-button {
+  color: var(--red) !important;
 }
 
 /* meet zozo */
-.vid{
-    height: 40rem;
-    width: 100%;
-    
-    display: flex;
-    justify-content: center;
-  
+.vid {
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.vid iframe{
+.vid iframe {
   width: 70%;
-  height: 100%
+  height: 100%;
 }
 
 /*get social*/
 
- .social-embed{
-    display: flex;
-    justify-content: center;
- }
- 
- .tg td{
-    padding: 3rem;   
- }
+.social-embed {
+  display: flex;
+  justify-content: center;
+}
+
+.tg td {
+  padding: 3rem;
+}
 
 .facebook-embed {
   text-align: center;
-  
- 
 }
 
 .facebook-embed iframe {
   height: 25rem;
   width: 100%;
-  
 }
 
-
 .insta-embed {
- width: 100%;
+  width: 100%;
 }
 
 /*listen up*/
 .radio-back {
   background-image: url("./images/radio-bkg.jpg");
-
   padding: 1rem;
 }
 
@@ -571,6 +556,7 @@ header .navbar a:hover {
 .audio {
   text-align: center;
 }
+
 /*articles*/
 .articles .box-container {
   gap: 1.5rem;
@@ -580,10 +566,11 @@ header .navbar a:hover {
   width: 30rem !important;
   align-items: center;
 }
+
 .articles .box-container .box {
   overflow: hidden;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-  border: 1rem solid #fff;
+  border: 1rem solid var(--white);
   border-radius: 0.5rem;
   height: 25rem;
   position: relative;
@@ -618,7 +605,6 @@ header .navbar a:hover {
   color: var(--red);
   padding: 0.5rem 0;
 }
-/*articles*/
 
 /*review*/
 
@@ -642,12 +628,12 @@ header .navbar a:hover {
 }
 
 .review .box h3 {
-  color: #333;
+  color: var(--black);
   font-size: 2.5rem;
 }
 
 .review .box p {
-  color: #666;
+  color: var(--gray);
   font-size: 1.5rem;
   padding: 1rem 0;
 }
@@ -660,6 +646,7 @@ header .navbar a:hover {
   gap: 1.5rem;
   align-items: center;
 }
+
 .contact .row .image {
   flex: 1 1 35rem;
 }
@@ -675,9 +662,10 @@ header .navbar a:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
+
 .contact .row form h3 {
   font-size: 2.5rem;
-  color: #333;
+  color: var(--black);
   text-align: center;
 }
 
@@ -702,8 +690,8 @@ header .navbar a:hover {
   margin: 1rem 0;
   padding: 1rem;
   font-size: 1.7rem;
-  color: #333;
-  background: #f7f7f7;
+  color: var(--black);
+  background: var(--light-gray);
   text-transform: none;
 }
 
@@ -723,7 +711,7 @@ header .navbar a:hover {
 }
 
 .footer {
-  background: #333;
+  background: var(--black);
 }
 
 .footer .box-container {
@@ -740,7 +728,7 @@ header .navbar a:hover {
 .footer .box-container .box h3 {
   font-size: 2.5rem;
   padding: 0.7rem 0;
-  color: #fff;
+  color: var(--white);
 }
 
 .footer .box-container .box p {
@@ -771,22 +759,23 @@ header .navbar a:hover {
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: normal;
-  color: #fff;
+  color: var(--white);
   border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
 }
 
 .footer .credit span {
   color: var(--red);
 }
+
 footer .credit {
   font-size: 14px;
 }
 
-.credit .css-cred a{
+.credit .css-cred a {
   color: #5cb874 !important;
 }
 
-.credit .css-cred:hover a{
+.credit .css-cred:hover a {
   color: #485696 !important;
   transition: 1s;
 }
@@ -807,7 +796,6 @@ footer .credit {
 .credit .css-cred:hover:after {
   width: 100%;
 }
-
 
 /*test*/
 
@@ -840,7 +828,7 @@ footer .credit {
     top: 100%;
     right: 0;
     left: 0;
-    background: #333;
+    background: var(--black);
     border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
     padding: 1rem 2rem;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
